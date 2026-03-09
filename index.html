@@ -368,16 +368,7 @@
             </p>
           </div>
 
-          <form
-            action="#"
-            method="POST"
-            class="space-y-4"
-            onsubmit="
-              event.preventDefault();
-              alert('Thank you! The form has been sent.');
-              closeModal();
-            "
-          >
+          <form id="leadForm" action="#" method="POST" class="space-y-4">
             <div>
               <label
                 class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"
@@ -385,6 +376,7 @@
               >
               <input
                 type="text"
+                id="userName"
                 placeholder="e.g. John Smith"
                 class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-slate-50"
                 required
@@ -397,6 +389,7 @@
               >
               <input
                 type="email"
+                id="userEmail"
                 placeholder="john@example.com"
                 class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-slate-50"
                 required
