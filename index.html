@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegAudit AI - Crypto Tax Compliance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body class="font-sans text-slate-800 antialiased bg-slate-50">
+    <nav
+      class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+            <i
+              data-lucide="leaf"
+              class="h-8 w-8 text-brand-accent fill-current"
+            ></i>
+            <span class="font-bold text-2xl tracking-tight text-slate-900"
+              >RegAudit <span class="text-brand-accent">AI</span></span
+            >
+          </div>
+
+          <div class="hidden md:flex space-x-8 items-center">
+            <a
+              href="#how-it-works"
+              class="text-slate-600 hover:text-brand-accent transition font-medium"
+              >How it works</a
+            >
+            <a
+              href="#compliance"
+              class="text-slate-600 hover:text-brand-accent transition font-medium"
+              >HMRC Compliance</a
+            >
+            <a
+              href="#exchanges"
+              class="text-slate-600 hover:text-brand-accent transition font-medium"
+              >Exchanges</a
+            >
+            <button
+              onclick="openModal()"
+              class="bg-brand-accent hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold transition shadow-lg shadow-blue-500/30 transform hover:-translate-y-0.5"
+            >
+              Start Your Audit
+            </button>
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button class="text-slate-600 hover:text-slate-900">
+              <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/images/banner-01.jpg"
+          alt="Edinburgh Background"
+          class="w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-slate-900/50 mix-blend-multiply"></div>
+
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-transparent"
+        ></div>
+      </div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left"
+      >
+        <div class="lg:w-2/3">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg"
+          >
+            Master Your Crypto Taxes <br />
+            with <span class="text-blue-400">AI Precision.</span>
+          </h1>
+          <p
+            class="text-lg md:text-xl text-slate-100 mb-8 max-w-2xl leading-relaxed font-light drop-shadow-md"
+          >
+            The smarter way for UK investors to navigate Sterling reporting.
+            Transform complex exchange data into a professional, HMRC-ready
+            audit trail in seconds.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6"
+          >
+            <button
+              onclick="openModal()"
+              class="bg-brand-accent hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl shadow-blue-500/20 transform hover:-translate-y-0.5 ring-offset-2 focus:ring-2"
+            >
+              Request Early Access
+            </button>
+            <button
+              class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/40 px-8 py-4 rounded-xl font-semibold text-lg transition shadow-lg"
+            >
+              <i data-lucide="play-circle" class="w-5 h-5"></i>
+              <span>Watch Video</span>
+            </button>
+          </div>
+
+          <p
+            class="text-white font-medium text-sm flex items-center justify-center lg:justify-start gap-2 drop-shadow-md"
+          >
+            <i
+              data-lucide="check-circle"
+              class="w-5 h-5 text-green-400 fill-green-400/20"
+            ></i>
+            <span>HMRC Compliance Made Simple</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="exchanges" class="relative py-20 -mt-24 z-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="glass-card p-8 rounded-2xl transform transition duration-300 hover:-translate-y-1"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50/80 rounded-lg flex items-center justify-center mb-6"
+            >
+              <img
+                src="/images/money-flow.svg"
+                alt="Seamless Multi-Exchange Integration"
+                width="44"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              Seamless Multi-Exchange Integration
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              Seamlessly import history from Binance, Kraken, Revolut, eToro,
+              and more. One unified view of your entire portfolio.
+            </p>
+          </div>
+
+          <div
+            class="glass-card p-8 rounded-2xl transform transition duration-300 hover:-translate-y-1"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50/80 rounded-lg flex items-center justify-center mb-6"
+            >
+              <img
+                src="/images/sterling.svg"
+                alt="True Sterling Valuation"
+                width="44"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              True Sterling Valuation
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              Every transaction valued in Sterling at the exact moment of trade.
+              Powered by real-time CoinGecko historical data.
+            </p>
+          </div>
+
+          <div
+            class="glass-card p-8 rounded-2xl transform transition duration-300 hover:-translate-y-1"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50/80 rounded-lg flex items-center justify-center mb-6"
+            >
+              <img
+                src="/images/standarts.svg"
+                alt="Built for HMRC Standards"
+                width="44"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">
+              Built for HMRC Standards
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              Fully compliant with UK Section 104 pooling and Same Day rules.
+              Your data, formatted for professional tax filing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-16">
+          <span
+            class="text-brand-accent font-semibold text-sm uppercase tracking-wider"
+            >The Workflow</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2 mb-4">
+            How It Works
+          </h2>
+          <p class="text-slate-500 max-w-2xl mx-auto">
+            From chaos to compliance in three simple steps.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div
+            class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-100 z-0"
+          ></div>
+
+          <div class="grid md:grid-cols-3 gap-12 relative z-10">
+            <div class="flex flex-col items-center group">
+              <div
+                class="w-24 h-24 bg-white border-2 border-slate-100 shadow-lg rounded-2xl flex items-center justify-center mb-6 relative transition group-hover:border-blue-200 group-hover:shadow-blue-100"
+              >
+                <i
+                  data-lucide="upload-cloud"
+                  class="w-10 h-10 text-brand-accent"
+                ></i>
+                <div
+                  class="absolute -top-3 -right-3 w-8 h-8 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md"
+                >
+                  1
+                </div>
+              </div>
+              <h3 class="text-lg font-bold mb-2">Upload & Sync</h3>
+              <p class="text-sm text-slate-500 max-w-xs mx-auto">
+                Drop your CSV exports from any major exchange into our secure
+                interface.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center group">
+              <div
+                class="w-24 h-24 bg-white border-2 border-slate-100 shadow-lg rounded-2xl flex items-center justify-center mb-6 relative transition group-hover:border-blue-200 group-hover:shadow-blue-100"
+              >
+                <i data-lucide="cpu" class="w-10 h-10 text-brand-accent"></i>
+                <div
+                  class="absolute -top-3 -right-3 w-8 h-8 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md"
+                >
+                  2
+                </div>
+              </div>
+              <h3 class="text-lg font-bold mb-2">AI Normalisation</h3>
+              <p class="text-sm text-slate-500 max-w-xs mx-auto">
+                Our engine de-duplicates transactions and converts assets to GBP
+                using historical rates.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center group">
+              <div
+                class="w-24 h-24 bg-white border-2 border-slate-100 shadow-lg rounded-2xl flex items-center justify-center mb-6 relative transition group-hover:border-blue-200 group-hover:shadow-blue-100"
+              >
+                <i data-lucide="lock" class="w-10 h-10 text-brand-accent"></i>
+                <div
+                  class="absolute -top-3 -right-3 w-8 h-8 bg-brand-accent text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md"
+                >
+                  3
+                </div>
+              </div>
+              <h3 class="text-lg font-bold mb-2">Secure Your Audit Trail</h3>
+              <p class="text-sm text-slate-500 max-w-xs mx-auto">
+                Review your "Audit-Ready" status and download your report for
+                tax filing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4">
+      <div
+        class="max-w-6xl mx-auto bg-slate-900 rounded-3xl p-10 md:p-20 text-center relative overflow-hidden shadow-2xl"
+      >
+        <div
+          class="absolute top-0 right-0 w-80 h-80 bg-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 -mr-20 -mt-20"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-80 h-80 bg-purple-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 -ml-20 -mb-20"
+        ></div>
+
+        <div class="relative z-10">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight"
+          >
+            While the Taxman Never Sleeps, <br />You Finally Can.
+          </h2>
+          <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto font-light">
+            Don’t let tax complexity hold you back. Be the first to experience
+            precision crypto auditing designed specifically for the UK market.
+          </p>
+          <button
+            onclick="openModal()"
+            class="bg-brand-accent hover:bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg transition shadow-xl shadow-blue-900/40 hover:scale-105 transform duration-200"
+          >
+            Get Early Access
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-brand-dark text-slate-400 py-12 border-t border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="text-center md:text-left">
+            <div
+              class="flex items-center justify-center md:justify-start gap-2 mb-4"
+            >
+              <i data-lucide="leaf" class="h-6 w-6 text-brand-accent"></i>
+              <span class="font-bold text-xl text-white">RegAudit AI</span>
+            </div>
+            <p class="text-sm text-slate-500">
+              © 2026 RegAudit AI. Precision Compliance for UK Investors.
+            </p>
+          </div>
+
+          <div class="flex gap-8 text-sm font-medium">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+            <a href="#" class="hover:text-white transition">Contact Support</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="leadModal" class="fixed inset-0 z-[60] hidden">
+      <div
+        class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm transition-opacity"
+        onclick="closeModal()"
+      ></div>
+
+      <div class="relative min-h-screen flex items-center justify-center p-4">
+        <div
+          class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative transform transition-all scale-100 animate-[fadeIn_0.3s_ease-out]"
+        >
+          <button
+            onclick="closeModal()"
+            class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition"
+          >
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+
+          <div class="text-center mb-8">
+            <div
+              class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-lucide="user-plus" class="w-6 h-6 text-brand-accent"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">Get Early Access</h3>
+            <p class="text-slate-500 mt-2 text-sm">
+              Enter your details to join the RegAudit AI beta program.
+            </p>
+          </div>
+
+          <form
+            action="#"
+            method="POST"
+            class="space-y-4"
+            onsubmit="
+              event.preventDefault();
+              alert('Thank you! The form has been sent.');
+              closeModal();
+            "
+          >
+            <div>
+              <label
+                class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                placeholder="e.g. John Smith"
+                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-slate-50"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                placeholder="john@example.com"
+                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-slate-50"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-brand-accent hover:bg-blue-600 text-white font-bold py-3.5 rounded-lg transition shadow-lg shadow-blue-500/30 transform active:scale-95"
+            >
+              Secure My Spot
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/events.js"></script>
+  </body>
+</html>
